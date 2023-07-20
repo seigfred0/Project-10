@@ -126,23 +126,37 @@ header {
 
     .main_nav {
         display: none;
+        width: 90%;
     }
 
     .main_nav li{
-        width: 100%;
+        width: 90%;
         justify-content: center;
-        text-align: center;
+        text-align: left;
+    }
+
+    .nav_links {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.5rem;
+
+        transition: color,  2s;
+    }
+
+    .nav_links:hover {
+        color: pink;
+        text-decoration: underline;
     }
 
     .show_nav {
         display: flex;
-        width: 100vw;
+        width: 90%;
         min-height: 100vh;
         flex-direction: column;
         justify-content: flex-start;
-        padding-top: 4em;
+        padding-top: 5em;
         gap: 1em;   
         background: black;
+
     }
 
     /* .navbar_toggle.active {
@@ -291,7 +305,7 @@ footer {
     align-items: center;
     gap: 3em;
     padding: 2em;
-    margin-top: 8em;
+    margin-top: 9em;
 }
 
 .footer_nav li a{
